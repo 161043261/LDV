@@ -1,5 +1,7 @@
 export default function formatNumberToThousands(num: number): string {
-  if (isNaN(num) || typeof num !== 'number') {
+  // 更推荐 Number.isNaN
+  // 参考 https://wangdoc.com/es6/number#numberisfinite-numberisnan
+  if (Number.isNaN(num) || typeof num !== 'number') {
     throw new Error('Input must be a valid number')
   }
   const [integerPart, decimalPart] = num.toString().split('.')

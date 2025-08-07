@@ -153,6 +153,8 @@ const setChartData = async () => {
   ]
   const options: ECOption & {
     series: Array<{ data: number[] }>
+    // 更推荐
+    // series: { data: number }[]
   } = {
     tooltip: {
       trigger: 'axis',

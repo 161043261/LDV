@@ -30,6 +30,7 @@ import type {
   // TransformComponentOption,
   LegendComponentOption,
   GraphicComponentOption,
+  VisualMapComponentOption,
 } from 'echarts/components'
 
 import { LabelLayout, UniversalTransition } from 'echarts/features'
@@ -48,6 +49,7 @@ export type ECOption = ComposeOption<
   | DatasetComponentOption
   | LegendComponentOption
   | GraphicComponentOption
+  | VisualMapComponentOption
 >
 
 echarts.use([
